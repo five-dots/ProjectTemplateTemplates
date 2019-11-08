@@ -1,0 +1,6 @@
+#+STARTUP: folded indent inlineimages latexpreview
+#+PROPERTY: header-args:R :results output :exports both :cache yes :eval never-export
+#+PROPERTY: header-args:R+ :session *R:blog* :width 640 :height 480
+
+* Project notes
+* TODOs

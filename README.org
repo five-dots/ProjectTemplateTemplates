@@ -1,0 +1,29 @@
+#+STARTUP: showall indent
+
+* ProjectTemplateTemplates
+
+Custom R project template for[[http://projecttemplate.net/][ ={ProjectTemplate}= ]]package. See [[http://projecttemplate.net/custom_templates.html][here]] for more info.
+
+** Usage
+
+Clone the project in your favarite direcory.
+#+begin_src shell
+clone https://github.com/five-dots/ProjectTemplateTemplates.git
+#+end_src
+
+Set options in your =.Rprofile=.
+#+begin_src R
+options(ProjectTemplate.templatedir = "/path/to/ProjectTemplateTemplates")
+#+end_src
+
+Create a new project from "deafult" template in this repo.
+#+begin_src R
+library(ProjectTemplate)
+create.project("my-project", template = "default")
+#+end_src
+
+Load project and start your data analysis project !!
+#+begin_src R
+setwd("my-project")
+load.project()
+#+end_src
